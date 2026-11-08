@@ -20,6 +20,21 @@
 </dialog>
 
 <div id="toasts" aria-live="polite"></div>
+
+<div id="notifPopover" class="notif-popover" role="menu" hidden>
+  <div class="notif-head">
+    <strong>Notifications</strong>
+    <div class="notif-tabs" role="tablist">
+      <button role="tab" data-tab="all" aria-selected="true">All</button>
+      <button role="tab" data-tab="unread" aria-selected="false">Unread</button>
+      <button role="tab" data-tab="request" aria-selected="false">Requests</button>
+    </div>
+    <button class="btn btn-ghost btn-sm" data-act="readall" aria-label="Mark all as read">Mark all read</button>
+  </div>
+  <ul id="notifPopList" class="notif-list" role="menuitem"></ul>
+  <div class="notif-foot"><a href="#" data-act="viewAll">View all notifications</a></div>
+</div>
+
 <script src="app.js"></script>
 </body>
 </html>
